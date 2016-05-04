@@ -1,0 +1,8 @@
+A:\Clientes\Vecina\Producto_Primario\Producto_Primario\bin\Debug\Producto_Primario.exe.config
+A:\Clientes\Vecina\Producto_Primario\Producto_Primario\bin\Debug\Producto_Primario.exe
+A:\Clientes\Vecina\Producto_Primario\Producto_Primario\bin\Debug\Producto_Primario.pdb
+A:\Clientes\Vecina\Producto_Primario\Producto_Primario\obj\Debug\Producto_Primario.csprojResolveAssemblyReference.cache
+A:\Clientes\Vecina\Producto_Primario\Producto_Primario\obj\Debug\Producto_Primario.MainForm.resources
+A:\Clientes\Vecina\Producto_Primario\Producto_Primario\obj\Debug\Producto_Primario.csproj.GenerateResource.Cache
+A:\Clientes\Vecina\Producto_Primario\Producto_Primario\obj\Debug\Producto_Primario.exe
+A:\Clientes\Vecina\Producto_Primario\Producto_Primario\obj\Debug\Producto_Primario.pdb
