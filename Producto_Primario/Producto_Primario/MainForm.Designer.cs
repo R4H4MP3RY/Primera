@@ -66,16 +66,35 @@ namespace Producto_Primario
 		private System.Windows.Forms.Button btnLimpiarProveedorCompras;
 		private System.Windows.Forms.Button btnBuscarProveedorCompras;
 		private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.ListBox lstBoxProdcutosCompras;
-		private System.Windows.Forms.GroupBox groupBox4;
-		private System.Windows.Forms.TextBox xtBoxDescripcionCompras;
-		private System.Windows.Forms.Button btnAgregarProductoCompras;
 		private System.Windows.Forms.RadioButton rdioBtnGramos;
 		private System.Windows.Forms.RadioButton rdioBtnKg;
 		private System.Windows.Forms.RadioButton rdioBtnTonelada;
 		private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem toolStripAlmacen;
 		private System.Windows.Forms.ToolStripMenuItem toolStripClientes;
+		private System.Windows.Forms.Label label22;
+		private System.Windows.Forms.Label label21;
+		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.RadioButton rdioBtnTCompras;
+		private System.Windows.Forms.RadioButton rdioBtnGrCompras;
+		private System.Windows.Forms.RadioButton rdioBtnKgCompras;
+		private System.Windows.Forms.Label label14;
+		private System.Windows.Forms.TextBox txtBoxCantidadCompra;
+		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Button btnAgregarCompras;
+		private System.Windows.Forms.ComboBox comBoxProductoCompra;
+		private System.Windows.Forms.Button btnComprar;
+		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.Button btnEliminarCompras;
+		private System.Windows.Forms.Label label18;
+		private System.Windows.Forms.Label label19;
+		private System.Windows.Forms.Label label20;
+		private System.Windows.Forms.TextBox txtBoxTotalCompras;
+		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Panel panelPrecioCompras;
+		private System.Windows.Forms.Panel panelCantidadCompras;
+		private System.Windows.Forms.Panel panelProductosCompras;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -137,11 +156,6 @@ namespace Producto_Primario
 			this.txtBoxNombre = new System.Windows.Forms.TextBox();
 			this.lblNombre = new System.Windows.Forms.Label();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.btnAgregarProductoCompras = new System.Windows.Forms.Button();
-			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.xtBoxDescripcionCompras = new System.Windows.Forms.TextBox();
-			this.lstBoxProdcutosCompras = new System.Windows.Forms.ListBox();
 			this.grpBoxDatosProveedor = new System.Windows.Forms.GroupBox();
 			this.btnLimpiarProveedorCompras = new System.Windows.Forms.Button();
 			this.btnBuscarProveedorCompras = new System.Windows.Forms.Button();
@@ -160,15 +174,38 @@ namespace Producto_Primario
 			this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripAlmacen = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripClientes = new System.Windows.Forms.ToolStripMenuItem();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.rdioBtnTCompras = new System.Windows.Forms.RadioButton();
+			this.rdioBtnGrCompras = new System.Windows.Forms.RadioButton();
+			this.rdioBtnKgCompras = new System.Windows.Forms.RadioButton();
+			this.label14 = new System.Windows.Forms.Label();
+			this.txtBoxCantidadCompra = new System.Windows.Forms.TextBox();
+			this.label15 = new System.Windows.Forms.Label();
+			this.btnAgregarCompras = new System.Windows.Forms.Button();
+			this.comBoxProductoCompra = new System.Windows.Forms.ComboBox();
+			this.btnComprar = new System.Windows.Forms.Button();
+			this.label16 = new System.Windows.Forms.Label();
+			this.label17 = new System.Windows.Forms.Label();
+			this.btnEliminarCompras = new System.Windows.Forms.Button();
+			this.label18 = new System.Windows.Forms.Label();
+			this.label19 = new System.Windows.Forms.Label();
+			this.label20 = new System.Windows.Forms.Label();
+			this.txtBoxTotalCompras = new System.Windows.Forms.TextBox();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.panelPrecioCompras = new System.Windows.Forms.Panel();
+			this.panelCantidadCompras = new System.Windows.Forms.Panel();
+			this.panelProductosCompras = new System.Windows.Forms.Panel();
+			this.label21 = new System.Windows.Forms.Label();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.label22 = new System.Windows.Forms.Label();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.grpBoxDescripcion.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
-			this.groupBox2.SuspendLayout();
-			this.groupBox4.SuspendLayout();
 			this.grpBoxDatosProveedor.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
+			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -182,7 +219,7 @@ namespace Producto_Primario
 			this.tabControl1.Location = new System.Drawing.Point(12, 27);
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(1184, 692);
+			this.tabControl1.Size = new System.Drawing.Size(1305, 692);
 			this.tabControl1.TabIndex = 0;
 			// 
 			// tabPage1
@@ -584,65 +621,10 @@ namespace Producto_Primario
 			this.tabPage2.Location = new System.Drawing.Point(4, 27);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(1176, 661);
+			this.tabPage2.Size = new System.Drawing.Size(1297, 661);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "Comprar";
 			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
-			// groupBox2
-			// 
-			this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-			| System.Windows.Forms.AnchorStyles.Left)));
-			this.groupBox2.Controls.Add(this.btnAgregarProductoCompras);
-			this.groupBox2.Controls.Add(this.groupBox4);
-			this.groupBox2.Controls.Add(this.lstBoxProdcutosCompras);
-			this.groupBox2.Location = new System.Drawing.Point(8, 136);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(691, 243);
-			this.groupBox2.TabIndex = 1;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Productos";
-			// 
-			// btnAgregarProductoCompras
-			// 
-			this.btnAgregarProductoCompras.Location = new System.Drawing.Point(608, 32);
-			this.btnAgregarProductoCompras.Name = "btnAgregarProductoCompras";
-			this.btnAgregarProductoCompras.Size = new System.Drawing.Size(77, 56);
-			this.btnAgregarProductoCompras.TabIndex = 8;
-			this.btnAgregarProductoCompras.Text = "Agregar";
-			this.btnAgregarProductoCompras.UseVisualStyleBackColor = true;
-			// 
-			// groupBox4
-			// 
-			this.groupBox4.Controls.Add(this.xtBoxDescripcionCompras);
-			this.groupBox4.Location = new System.Drawing.Point(305, 23);
-			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Size = new System.Drawing.Size(294, 199);
-			this.groupBox4.TabIndex = 0;
-			this.groupBox4.TabStop = false;
-			this.groupBox4.Text = "Descripción";
-			// 
-			// xtBoxDescripcionCompras
-			// 
-			this.xtBoxDescripcionCompras.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.xtBoxDescripcionCompras.Enabled = false;
-			this.xtBoxDescripcionCompras.Location = new System.Drawing.Point(6, 23);
-			this.xtBoxDescripcionCompras.Multiline = true;
-			this.xtBoxDescripcionCompras.Name = "xtBoxDescripcionCompras";
-			this.xtBoxDescripcionCompras.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-			this.xtBoxDescripcionCompras.Size = new System.Drawing.Size(282, 170);
-			this.xtBoxDescripcionCompras.TabIndex = 0;
-			// 
-			// lstBoxProdcutosCompras
-			// 
-			this.lstBoxProdcutosCompras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-			| System.Windows.Forms.AnchorStyles.Left)));
-			this.lstBoxProdcutosCompras.FormattingEnabled = true;
-			this.lstBoxProdcutosCompras.ItemHeight = 18;
-			this.lstBoxProdcutosCompras.Location = new System.Drawing.Point(6, 38);
-			this.lstBoxProdcutosCompras.Name = "lstBoxProdcutosCompras";
-			this.lstBoxProdcutosCompras.Size = new System.Drawing.Size(293, 184);
-			this.lstBoxProdcutosCompras.TabIndex = 7;
 			// 
 			// grpBoxDatosProveedor
 			// 
@@ -662,7 +644,7 @@ namespace Producto_Primario
 			this.grpBoxDatosProveedor.Controls.Add(this.label9);
 			this.grpBoxDatosProveedor.Location = new System.Drawing.Point(3, 6);
 			this.grpBoxDatosProveedor.Name = "grpBoxDatosProveedor";
-			this.grpBoxDatosProveedor.Size = new System.Drawing.Size(1164, 124);
+			this.grpBoxDatosProveedor.Size = new System.Drawing.Size(1285, 124);
 			this.grpBoxDatosProveedor.TabIndex = 0;
 			this.grpBoxDatosProveedor.TabStop = false;
 			this.grpBoxDatosProveedor.Text = "Datos de proveedor";
@@ -757,7 +739,7 @@ namespace Producto_Primario
 			this.txtBoxNombreProveedorCompras.Location = new System.Drawing.Point(87, 23);
 			this.txtBoxNombreProveedorCompras.MaximumSize = new System.Drawing.Size(425, 24);
 			this.txtBoxNombreProveedorCompras.Name = "txtBoxNombreProveedorCompras";
-			this.txtBoxNombreProveedorCompras.Size = new System.Drawing.Size(424, 24);
+			this.txtBoxNombreProveedorCompras.Size = new System.Drawing.Size(425, 24);
 			this.txtBoxNombreProveedorCompras.TabIndex = 0;
 			// 
 			// label9
@@ -777,7 +759,7 @@ namespace Producto_Primario
 			this.consultarToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(1208, 25);
+			this.menuStrip1.Size = new System.Drawing.Size(1329, 25);
 			this.menuStrip1.TabIndex = 1;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -810,11 +792,268 @@ namespace Producto_Primario
 			this.toolStripClientes.Size = new System.Drawing.Size(200, 22);
 			this.toolStripClientes.Text = "Clientes/Proveedores";
 			// 
+			// groupBox2
+			// 
+			this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			| System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
+			this.groupBox2.Controls.Add(this.label22);
+			this.groupBox2.Controls.Add(this.label21);
+			this.groupBox2.Controls.Add(this.textBox1);
+			this.groupBox2.Controls.Add(this.rdioBtnTCompras);
+			this.groupBox2.Controls.Add(this.rdioBtnGrCompras);
+			this.groupBox2.Controls.Add(this.rdioBtnKgCompras);
+			this.groupBox2.Controls.Add(this.label14);
+			this.groupBox2.Controls.Add(this.txtBoxCantidadCompra);
+			this.groupBox2.Controls.Add(this.label15);
+			this.groupBox2.Controls.Add(this.btnAgregarCompras);
+			this.groupBox2.Controls.Add(this.comBoxProductoCompra);
+			this.groupBox2.Controls.Add(this.btnComprar);
+			this.groupBox2.Controls.Add(this.label16);
+			this.groupBox2.Controls.Add(this.label17);
+			this.groupBox2.Controls.Add(this.btnEliminarCompras);
+			this.groupBox2.Controls.Add(this.label18);
+			this.groupBox2.Controls.Add(this.label19);
+			this.groupBox2.Controls.Add(this.label20);
+			this.groupBox2.Controls.Add(this.txtBoxTotalCompras);
+			this.groupBox2.Controls.Add(this.panel1);
+			this.groupBox2.Controls.Add(this.panelPrecioCompras);
+			this.groupBox2.Controls.Add(this.panelCantidadCompras);
+			this.groupBox2.Controls.Add(this.panelProductosCompras);
+			this.groupBox2.Location = new System.Drawing.Point(6, 134);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(1285, 487);
+			this.groupBox2.TabIndex = 10;
+			this.groupBox2.TabStop = false;
+			this.groupBox2.Text = "Descripción";
+			// 
+			// rdioBtnTCompras
+			// 
+			this.rdioBtnTCompras.Location = new System.Drawing.Point(725, 23);
+			this.rdioBtnTCompras.Name = "rdioBtnTCompras";
+			this.rdioBtnTCompras.Size = new System.Drawing.Size(36, 24);
+			this.rdioBtnTCompras.TabIndex = 9;
+			this.rdioBtnTCompras.TabStop = true;
+			this.rdioBtnTCompras.Text = "T";
+			this.rdioBtnTCompras.UseVisualStyleBackColor = true;
+			// 
+			// rdioBtnGrCompras
+			// 
+			this.rdioBtnGrCompras.Location = new System.Drawing.Point(816, 23);
+			this.rdioBtnGrCompras.Name = "rdioBtnGrCompras";
+			this.rdioBtnGrCompras.Size = new System.Drawing.Size(44, 24);
+			this.rdioBtnGrCompras.TabIndex = 11;
+			this.rdioBtnGrCompras.TabStop = true;
+			this.rdioBtnGrCompras.Text = "gr";
+			this.rdioBtnGrCompras.UseVisualStyleBackColor = true;
+			// 
+			// rdioBtnKgCompras
+			// 
+			this.rdioBtnKgCompras.Location = new System.Drawing.Point(767, 23);
+			this.rdioBtnKgCompras.Name = "rdioBtnKgCompras";
+			this.rdioBtnKgCompras.Size = new System.Drawing.Size(44, 24);
+			this.rdioBtnKgCompras.TabIndex = 10;
+			this.rdioBtnKgCompras.TabStop = true;
+			this.rdioBtnKgCompras.Text = "Kg";
+			this.rdioBtnKgCompras.UseVisualStyleBackColor = true;
+			// 
+			// label14
+			// 
+			this.label14.Location = new System.Drawing.Point(502, 26);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(79, 23);
+			this.label14.TabIndex = 16;
+			this.label14.Text = "Cantidad:";
+			// 
+			// txtBoxCantidadCompra
+			// 
+			this.txtBoxCantidadCompra.Location = new System.Drawing.Point(587, 23);
+			this.txtBoxCantidadCompra.Name = "txtBoxCantidadCompra";
+			this.txtBoxCantidadCompra.Size = new System.Drawing.Size(123, 24);
+			this.txtBoxCantidadCompra.TabIndex = 8;
+			// 
+			// label15
+			// 
+			this.label15.Location = new System.Drawing.Point(120, 26);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(81, 23);
+			this.label15.TabIndex = 15;
+			this.label15.Text = "Producto:";
+			// 
+			// btnAgregarCompras
+			// 
+			this.btnAgregarCompras.Location = new System.Drawing.Point(1125, 20);
+			this.btnAgregarCompras.Name = "btnAgregarCompras";
+			this.btnAgregarCompras.Size = new System.Drawing.Size(75, 30);
+			this.btnAgregarCompras.TabIndex = 13;
+			this.btnAgregarCompras.Text = "Agregar";
+			this.btnAgregarCompras.UseVisualStyleBackColor = true;
+			// 
+			// comBoxProductoCompra
+			// 
+			this.comBoxProductoCompra.FormattingEnabled = true;
+			this.comBoxProductoCompra.Location = new System.Drawing.Point(207, 23);
+			this.comBoxProductoCompra.Name = "comBoxProductoCompra";
+			this.comBoxProductoCompra.Size = new System.Drawing.Size(284, 26);
+			this.comBoxProductoCompra.TabIndex = 7;
+			// 
+			// btnComprar
+			// 
+			this.btnComprar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
+			this.btnComprar.Location = new System.Drawing.Point(1079, 265);
+			this.btnComprar.MaximumSize = new System.Drawing.Size(150, 117);
+			this.btnComprar.Name = "btnComprar";
+			this.btnComprar.Size = new System.Drawing.Size(150, 80);
+			this.btnComprar.TabIndex = 15;
+			this.btnComprar.Text = "Comprar";
+			this.btnComprar.UseVisualStyleBackColor = true;
+			// 
+			// label16
+			// 
+			this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
+			this.label16.Location = new System.Drawing.Point(936, 63);
+			this.label16.Name = "label16";
+			this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.label16.Size = new System.Drawing.Size(365, 23);
+			this.label16.TabIndex = 13;
+			this.label16.Text = "Importe";
+			// 
+			// label17
+			// 
+			this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
+			this.label17.Location = new System.Drawing.Point(821, 63);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(365, 23);
+			this.label17.TabIndex = 12;
+			this.label17.Text = "Precio";
+			// 
+			// btnEliminarCompras
+			// 
+			this.btnEliminarCompras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
+			this.btnEliminarCompras.Location = new System.Drawing.Point(1079, 152);
+			this.btnEliminarCompras.MaximumSize = new System.Drawing.Size(150, 117);
+			this.btnEliminarCompras.Name = "btnEliminarCompras";
+			this.btnEliminarCompras.Size = new System.Drawing.Size(150, 80);
+			this.btnEliminarCompras.TabIndex = 14;
+			this.btnEliminarCompras.Text = "Eliminar";
+			this.btnEliminarCompras.UseVisualStyleBackColor = true;
+			// 
+			// label18
+			// 
+			this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
+			this.label18.Location = new System.Drawing.Point(716, 63);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(365, 23);
+			this.label18.TabIndex = 11;
+			this.label18.Text = "Cantidad";
+			// 
+			// label19
+			// 
+			this.label19.Location = new System.Drawing.Point(36, 63);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(100, 23);
+			this.label19.TabIndex = 10;
+			this.label19.Text = "Productos";
+			// 
+			// label20
+			// 
+			this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label20.Location = new System.Drawing.Point(875, 462);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(50, 23);
+			this.label20.TabIndex = 5;
+			this.label20.Text = "Total: ";
+			// 
+			// txtBoxTotalCompras
+			// 
+			this.txtBoxTotalCompras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.txtBoxTotalCompras.Enabled = false;
+			this.txtBoxTotalCompras.Location = new System.Drawing.Point(931, 459);
+			this.txtBoxTotalCompras.Name = "txtBoxTotalCompras";
+			this.txtBoxTotalCompras.Size = new System.Drawing.Size(100, 24);
+			this.txtBoxTotalCompras.TabIndex = 14;
+			// 
+			// panel1
+			// 
+			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			| System.Windows.Forms.AnchorStyles.Left)));
+			this.panel1.AutoScroll = true;
+			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panel1.Location = new System.Drawing.Point(936, 89);
+			this.panel1.Name = "panel1";
+			this.panel1.Padding = new System.Windows.Forms.Padding(3, 5, 3, 3);
+			this.panel1.Size = new System.Drawing.Size(97, 357);
+			this.panel1.TabIndex = 3;
+			// 
+			// panelPrecioCompras
+			// 
+			this.panelPrecioCompras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			| System.Windows.Forms.AnchorStyles.Left)));
+			this.panelPrecioCompras.AutoScroll = true;
+			this.panelPrecioCompras.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panelPrecioCompras.Location = new System.Drawing.Point(821, 89);
+			this.panelPrecioCompras.Name = "panelPrecioCompras";
+			this.panelPrecioCompras.Padding = new System.Windows.Forms.Padding(3, 5, 3, 3);
+			this.panelPrecioCompras.Size = new System.Drawing.Size(109, 357);
+			this.panelPrecioCompras.TabIndex = 2;
+			// 
+			// panelCantidadCompras
+			// 
+			this.panelCantidadCompras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			| System.Windows.Forms.AnchorStyles.Left)));
+			this.panelCantidadCompras.AutoScroll = true;
+			this.panelCantidadCompras.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panelCantidadCompras.Location = new System.Drawing.Point(716, 89);
+			this.panelCantidadCompras.Name = "panelCantidadCompras";
+			this.panelCantidadCompras.Padding = new System.Windows.Forms.Padding(3, 5, 3, 0);
+			this.panelCantidadCompras.Size = new System.Drawing.Size(95, 357);
+			this.panelCantidadCompras.TabIndex = 1;
+			// 
+			// panelProductosCompras
+			// 
+			this.panelProductosCompras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			| System.Windows.Forms.AnchorStyles.Left)));
+			this.panelProductosCompras.AutoScroll = true;
+			this.panelProductosCompras.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panelProductosCompras.Location = new System.Drawing.Point(36, 89);
+			this.panelProductosCompras.Name = "panelProductosCompras";
+			this.panelProductosCompras.Padding = new System.Windows.Forms.Padding(5);
+			this.panelProductosCompras.Size = new System.Drawing.Size(674, 357);
+			this.panelProductosCompras.TabIndex = 0;
+			// 
+			// label21
+			// 
+			this.label21.Location = new System.Drawing.Point(876, 26);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(59, 23);
+			this.label21.TabIndex = 21;
+			this.label21.Text = "Precio:";
+			// 
+			// textBox1
+			// 
+			this.textBox1.Location = new System.Drawing.Point(942, 23);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(123, 24);
+			this.textBox1.TabIndex = 12;
+			// 
+			// label22
+			// 
+			this.label22.Location = new System.Drawing.Point(1071, 26);
+			this.label22.Name = "label22";
+			this.label22.Size = new System.Drawing.Size(29, 23);
+			this.label22.TabIndex = 22;
+			this.label22.Text = "Kg";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1208, 731);
+			this.ClientSize = new System.Drawing.Size(1329, 731);
 			this.Controls.Add(this.tabControl1);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
@@ -822,7 +1061,8 @@ namespace Producto_Primario
 			this.MinimizeBox = false;
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Sistema de ventas";
+			this.Text = "CONTROL ESPECIAL DE OPERACIONES DEL CICLO COMERCIAL AZTECA CONFITERIA: CHILES Y C" +
+	"ONDIMENTOS";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
@@ -831,13 +1071,12 @@ namespace Producto_Primario
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.tabPage2.ResumeLayout(false);
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox4.ResumeLayout(false);
-			this.groupBox4.PerformLayout();
 			this.grpBoxDatosProveedor.ResumeLayout(false);
 			this.grpBoxDatosProveedor.PerformLayout();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
+			this.groupBox2.ResumeLayout(false);
+			this.groupBox2.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
