@@ -66,13 +66,10 @@ namespace Producto_Primario
 		private System.Windows.Forms.Button btnLimpiarProveedorCompras;
 		private System.Windows.Forms.Button btnBuscarProveedorCompras;
 		private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.GroupBox groupBox3;
 		private System.Windows.Forms.ListBox lstBoxProdcutosCompras;
 		private System.Windows.Forms.GroupBox groupBox4;
 		private System.Windows.Forms.TextBox xtBoxDescripcionCompras;
 		private System.Windows.Forms.Button btnAgregarProductoCompras;
-		private System.Windows.Forms.ListBox lstBoxAlmacenCompras;
-		private System.Windows.Forms.Button btnActualizarAlmacenCompras;
 		private System.Windows.Forms.RadioButton rdioBtnGramos;
 		private System.Windows.Forms.RadioButton rdioBtnKg;
 		private System.Windows.Forms.RadioButton rdioBtnTonelada;
@@ -140,9 +137,6 @@ namespace Producto_Primario
 			this.txtBoxNombre = new System.Windows.Forms.TextBox();
 			this.lblNombre = new System.Windows.Forms.Label();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.btnActualizarAlmacenCompras = new System.Windows.Forms.Button();
-			this.lstBoxAlmacenCompras = new System.Windows.Forms.ListBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.btnAgregarProductoCompras = new System.Windows.Forms.Button();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -171,7 +165,6 @@ namespace Producto_Primario
 			this.grpBoxDescripcion.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
-			this.groupBox3.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox4.SuspendLayout();
 			this.grpBoxDatosProveedor.SuspendLayout();
@@ -317,7 +310,6 @@ namespace Producto_Primario
 			this.btnCobrar.TabIndex = 15;
 			this.btnCobrar.Text = "Cobrar";
 			this.btnCobrar.UseVisualStyleBackColor = true;
-			this.btnCobrar.Click += new System.EventHandler(this.BtnCobrarClick);
 			// 
 			// label6
 			// 
@@ -369,7 +361,6 @@ namespace Producto_Primario
 			this.label3.Size = new System.Drawing.Size(100, 23);
 			this.label3.TabIndex = 10;
 			this.label3.Text = "Productos";
-			this.label3.Click += new System.EventHandler(this.Label3Click);
 			// 
 			// lbltTotal
 			// 
@@ -584,11 +575,9 @@ namespace Producto_Primario
 			this.lblNombre.Size = new System.Drawing.Size(76, 23);
 			this.lblNombre.TabIndex = 2;
 			this.lblNombre.Text = "Nombre: ";
-			this.lblNombre.Click += new System.EventHandler(this.LblNombreClick);
 			// 
 			// tabPage2
 			// 
-			this.tabPage2.Controls.Add(this.groupBox3);
 			this.tabPage2.Controls.Add(this.groupBox2);
 			this.tabPage2.Controls.Add(this.grpBoxDatosProveedor);
 			this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -599,40 +588,6 @@ namespace Producto_Primario
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "Comprar";
 			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
-			// groupBox3
-			// 
-			this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-			| System.Windows.Forms.AnchorStyles.Left) 
-			| System.Windows.Forms.AnchorStyles.Right)));
-			this.groupBox3.Controls.Add(this.btnActualizarAlmacenCompras);
-			this.groupBox3.Controls.Add(this.lstBoxAlmacenCompras);
-			this.groupBox3.Location = new System.Drawing.Point(705, 136);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(462, 243);
-			this.groupBox3.TabIndex = 2;
-			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Almacen";
-			// 
-			// btnActualizarAlmacenCompras
-			// 
-			this.btnActualizarAlmacenCompras.Location = new System.Drawing.Point(367, 32);
-			this.btnActualizarAlmacenCompras.Name = "btnActualizarAlmacenCompras";
-			this.btnActualizarAlmacenCompras.Size = new System.Drawing.Size(81, 56);
-			this.btnActualizarAlmacenCompras.TabIndex = 10;
-			this.btnActualizarAlmacenCompras.Text = "Actualizar";
-			this.btnActualizarAlmacenCompras.UseVisualStyleBackColor = true;
-			// 
-			// lstBoxAlmacenCompras
-			// 
-			this.lstBoxAlmacenCompras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-			| System.Windows.Forms.AnchorStyles.Left)));
-			this.lstBoxAlmacenCompras.FormattingEnabled = true;
-			this.lstBoxAlmacenCompras.ItemHeight = 18;
-			this.lstBoxAlmacenCompras.Location = new System.Drawing.Point(6, 32);
-			this.lstBoxAlmacenCompras.Name = "lstBoxAlmacenCompras";
-			this.lstBoxAlmacenCompras.Size = new System.Drawing.Size(354, 184);
-			this.lstBoxAlmacenCompras.TabIndex = 9;
 			// 
 			// groupBox2
 			// 
@@ -876,7 +831,6 @@ namespace Producto_Primario
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.tabPage2.ResumeLayout(false);
-			this.groupBox3.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox4.ResumeLayout(false);
 			this.groupBox4.PerformLayout();
